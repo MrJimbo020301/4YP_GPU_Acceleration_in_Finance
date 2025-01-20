@@ -96,6 +96,10 @@ test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 # Device configuration
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
+
+### All the above are the data cleaning and preparation steps ### 
+
+
 # Define the models
 class BaseModel(nn.Module):
     def __init__(self, model_type='LSTM'):
