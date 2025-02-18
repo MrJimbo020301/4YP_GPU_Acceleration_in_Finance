@@ -1,0 +1,39 @@
+Notes on python problem sheet for C18 mobile robotics (M Fallon)
+================================================================
+
+The problem sheet is delivered as a Jupyter Python notebook (ipynb). This course was redesigned in Spring 2023 in this manner.
+
+Students can either install Jupyter on their computer (works best with Linux and Mac) or use SageMaker Studio (which is entirely online). 
+
+A free account for SageMaker Studio is available using your Oxford email address. You can login from here:
+https://studiolab.sagemaker.aws/login
+
+The original Python problems sheets were developed by Nived Chebrolu and Cyrill Stachniss in University of Bonn. The material is broadly overlapping that used in the previous C18 Mobile Robotics Course.
+
+Please get learning support directly from course C18 tutors.
+
+Please report feedback and issues on the code problems themselves to:
+mfallon@robots.ox.ac.uk
+nived@robots.ox.ac.uk
+
+===== Content =====
+There are 5 problems: one problem for each topic in the course with the exception of EKF localisation.
+
+===== Updates =====
+1 March 2023
+EKF localisation problem removed from problem list
+
+Particle filter problem is optional. If you find the problem sheet too long please ignore the last problem.
+However, the particle filter is the final topic of the lecture slides and is also in the main course material, so I think doing this problem will be helpful for learning the course.
+
+
+===== FAQ =====
+
+If you have problems running the a2-test notebook, you might be missing core packages, install them within your SageMaker account as follows:
+
+> pip install matplotlib
+
+Other possibly useful commands:
+
+> import numpy as np
+> subprocess.check_call([sys.executable, "-m", "pip", "install", numpy])
