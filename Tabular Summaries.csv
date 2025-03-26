@@ -1,6 +1,21 @@
-﻿Model,,
-,,
-,,
-,,
-,,
-,,
+﻿,,,Monthly PnL Return Percentage,,
+Silver,,,Baseline Model (ARIMA),Model Combinations,Mixture of Experts of Model Combinations
+,,,,,
+,Baseline Trading Strategy,Naïve Optimistic,,,
+,,Naïve Conservative,,,
+,,,,,
+,,,,,
+,Mixture of Experts Trading Strategy,Composition of Confidence,,,
+,,,,,
+,,,,,
+Silver,Monthly PnL Return Percentage (%),,,,
+,,,Baseline Trading Strategy,,Mixture of Experts Trading Strategy
+,,,Naïve Conservative,Naïve Optimistic,Composition of Confidence
+,,,,,
+,Price Prediction Philosophy,Baseline Model (ARIMA),-4.65,,1.03
+,,Model Combinations,4.25,7.32,6.05
+,,Mixture of Experts of Model Combinations,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
