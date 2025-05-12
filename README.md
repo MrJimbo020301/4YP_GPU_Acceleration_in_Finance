@@ -134,4 +134,4 @@ Detailed metrics, figures, and P\&L curves live in the `results/` folder.
 
 ## License
 
-This repository is released under the **MIT License**. See `LICENSE` for full terms.
+This repository is released under the **MIT License**.
