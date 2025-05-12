@@ -1,3 +1,45 @@
+## Instructions for Reproducing or Duplicating the Results:
+Pre-requisites:
+Python 3.12.7
+CUDA Version: 12.8 
+Torch Version: 2.5.0
+Torch Cuda Version: 12.1
+
+For each combination of price prediction techniques and trading strategy advancements below, 
+![image](https://github.com/user-attachments/assets/d636012c-49e8-4514-8812-d36f92aaba84)
+
+
+Navigate to the corresponding folder shown below. 
+
+![image](https://github.com/user-attachments/assets/0103a512-0594-49ef-8da9-d5b12daa4df0)
+
+
+There are a total of 12 asset classes selected. Navigate in the subfolder as you want. 
+![image](https://github.com/user-attachments/assets/5fae96e1-a2e9-445a-bec7-0af5004081e0)
+
+For each selected asset in whichever combination of price prediction or trading techniques, select the Jupyter Notebook script (.ipynb) with either "_Final.ipynb" or "_Final_Verified.ipynb" suffix script files. 
+
+
+Run the Jupyter Notebook file sequentially, the original version is expected to be executed successfully. 
+![image](https://github.com/user-attachments/assets/cba7fc8d-7008-4b1c-8f9c-6c49f6de646a)
+
+
+To migrate to the user's own cases with different train, validation and test cutoffs, they could directly alter the dates in each script to do so. This includes all related computations we would cover: price predictions,
+polynomial fittings and polynomial derivatives results and plots, and the corresponding trading strategy implementations results and plots. All the dates should be matched with the Excel Worksheet. 
+![image](https://github.com/user-attachments/assets/d2b0186c-2232-45f1-b563-0f0d78c2d481)
+
+
+To choose an individual selected assets at various dates, the author has retrived the information from this website https://www.investing.com/. We download the correpsponding historical data into our local machine environment, such as from https://www.investing.com/equities/citigroup-historical-data. 
+
+The three CSVs in the above should be updated accordingly. 
+
+![image](https://github.com/user-attachments/assets/741c9ab0-8b44-4b73-aeaa-11f8bfc86b3a)
+
+
+
+
+### The Original Complete Report Could be Read from the attached PDF files named "4YP_Report_Yuzhe_Jin_Final.pdf".
+
 ## Project Overview
 
 Despite these developments mentioned above, individual investors may still find it challenging when seeking to harness Artificial Intelligence (AI) for trading. Implementing deep-learning models effectively not only requires quality datasets and computational resources but also a solid foundation of financial-markets and machine-learning principles. In addition, the complexity of the ML models can pose a barrier to entry for those without a technical background.
