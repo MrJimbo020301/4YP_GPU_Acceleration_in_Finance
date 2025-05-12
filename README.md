@@ -12,9 +12,8 @@
 4. [Objectives](#objectives)
 5. [Key Contributions](#key-contributions)
 6. [Directory Layout](#directory-layout)
-7. [Data Sources](#data-sources)
-8. [Citation](#citation)
-9. [License](#license)
+7. [Citation](#citation)
+8. [License](#license)
 
 ---
 
