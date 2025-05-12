@@ -56,7 +56,10 @@
 
    Make sure all the new date information is retrieved and updated from the website to the corresponding Excel worksheets on the local machine.
 
+   <img src="https://github.com/user-attachments/assets/3f8dacf8-82bf-47f2-9678-f9f7e41ea715" width="650" alt="Editable Dates"/><br>
+
    <img src="https://github.com/user-attachments/assets/d2b0186c-2232-45f1-b563-0f0d78c2d481" width="650" alt="Editable Dates"/>
+
 
 ---
 
