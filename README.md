@@ -1,6 +1,6 @@
-# 4YP: GPU-Accelerated Price-Forecasting & Systematic Trading Strategies
+# 4YP: Hybrid Ensembles for Time-Series Forecasting and Systematic Trading
 
-*A Fourth-Year Project (4YP) in Engineering Science, University of Oxford, showcasing how retail investors can combine deep-learning ensembles with confidence-aware trading rules to enhance portfolio returns.*
+*A Fourth-Year Project (4YP) in Engineering Science, University of Oxford, showcasing how individual investors can combine deep-learning ensembles with confidence-aware trading rules to enhance portfolio returns.*
 
 ---
 
@@ -39,16 +39,18 @@
 
    <img src="https://github.com/user-attachments/assets/0103a512-0594-49ef-8da9-d5b12daa4df0" width="550" alt="Folder Structure"/>
 
-3. **Choose an asset class** (12 in total)
+   The basket trading algorithm could be found in this folder: `Final_Final Deployment of Basket Trading_MoE Prediction with MoE Trading`
+
+4. **Choose an asset class** (12 in total)
 
    <img src="https://github.com/user-attachments/assets/5fae96e1-a2e9-445a-bec7-0af5004081e0" width="550" alt="Asset Classes"/>
 
-4. **Open the notebook**
+5. **Open the notebook**
    Select the `.ipynb` file ending in `_Final.ipynb` or `_Final_Verified.ipynb`, then run **all cells sequentially**.
 
    <img src="https://github.com/user-attachments/assets/cba7fc8d-7008-4b1c-8f9c-6c49f6de646a" width="650" alt="Notebook Execution"/>
 
-5. **Customise date cut-offs (optional)**
+6. **Customise date cut-offs (optional)**
 
    Adjust the `TRAIN_START`, `VAL_START`, and `TEST_START` and all the corresponding variables referred to dates for each notebook script.
 
