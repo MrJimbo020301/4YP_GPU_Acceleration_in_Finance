@@ -142,13 +142,21 @@ Detailed metrics, figures, and P\&L curves live in the `results/` folder.
 
 ```
 4YP_GPU_Acceleration_in_Finance/
-├── data/                    # CSV downloads per asset
-├── notebooks/               # <Jupyter Notebooks by Model × Strategy>
-│   └── <model>_<strategy>/
-│       ├── <asset>_Final.ipynb
-│       └── <asset>_Final_Verified.ipynb
-├── Report/                 # Saved forecasts, back-tests, plots
-├── requirements.txt
+├── Tabular Summaries_Final Report.xlsx           # All Generated Results from the Report in Compilation
+├── Trading Strategy xxx Implementations_xxx Price Predictions/                  # <Jupyter Notebooks by Model × Strategy>
+│   └── <Asset>/
+│       ├── <Asset>_xxx_xx_(New)_xx_Final.ipynb
+│       └── <asset>_xxx_xx_(New)_xx_Final_Verified.ipynb
+── Final_Final Deployment of Basket Trading_MoE Prediction with MoE Trading/     # <Jupyter Notebooks For Basket Trading>
+    └── Basket Trading_Report Writing_Final_Verified_All Plots.ipynb
+    └── <confidence_xxx.csv>
+    └── <signals_xxx.csv>
+    └── <returns_xxx.csv>
+│   └── <Asset>/
+│       ├── <Asset>_xxx_xx_(New)_xx_Final.ipynb
+│       └── <asset>_xxx_xx_(New)_xx_Final_Verified.ipynb
+├── Report_Written_Materials    # Saved forecasts, back-tests, plots
+├── Report Diagrams_All         # Saved diagrams 
 └── README.md                # you-are-here
 ```
 
