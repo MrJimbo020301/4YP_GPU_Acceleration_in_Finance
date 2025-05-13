@@ -34,7 +34,7 @@
 
    <img src="https://github.com/user-attachments/assets/d636012c-49e8-4514-8812-d36f92aaba84" width="650" alt="Model × Strategy Matrix"/>
 
-2. **Enter the matching folder**
+2. **Enter the desired matching folder**
 
    <img src="https://github.com/user-attachments/assets/0103a512-0594-49ef-8da9-d5b12daa4df0" width="550" alt="Folder Structure"/>
 
@@ -44,14 +44,43 @@
 
    <img src="https://github.com/user-attachments/assets/5fae96e1-a2e9-445a-bec7-0af5004081e0" width="550" alt="Asset Classes"/>
 
-5. **Open the notebook**
-   Select the `.ipynb` file ending in `_Final.ipynb` or `_Final_Verified.ipynb`, then run **all cells sequentially**.
+5. **Implement Automatic Algorithm Trading Workflow**
 
    <img src="https://github.com/user-attachments/assets/cba7fc8d-7008-4b1c-8f9c-6c49f6de646a" width="650" alt="Notebook Execution"/>
 
-6. **Customise date cut-offs (optional)**
+   1. Select the `.ipynb` file ending in `_Final.ipynb` or `_Final_Verified.ipynb`, then run **all cells sequentially**.
+      For example, for the Hybrid model predictions with confidence voting trading strategy implementation on brent oil futures, firstly run `Brent Oil_MoE_Fluctuating_New_Final_Predictions.ipynb` snippet to produce price predictions from all models on a rolling basis.
+      This process might take several hours and should not be disturbed. It is highly recommended to execute the code on a remote server, not on your PC device, as it is quite computationally intensive. As a reference, the author processed the entire price prediction            workflow in about 4 or 5 hours on an NVIDIA 4090 card on the remote server. 
+
+   2. Then, to see all the plotted diagrams as a visualised way of how the Mixture-of-Expert model has been constructed, you can run the optional `Brent Oil_Final_MoE Fluctuating_New_All Curve Plottings_Final.ipynb` script.
+   3. Afterwards, execute `Brent Oil_Hybrid Models_Naive Trading & Polynomial Fittings_Final_Verified.ipynb` for Naive Trading or `Brent Oil_New_Hybrid Models_MoE Trading Strategy_Final_Verified.ipynb` for Confidence-voting Trading.
+      The results would be generated sequentially with each code block, with the trading log and plotted diagrams available for reference.
+
+
+   The very similar procedure works for all the other 7 cases except the final deployment of basket trading. In this case, we will firstly adopt the workflow applied to the ``Hybrid model price prediction +  Confidence Trading `` combination with all the selected asset
+   baskets. That is, follow the above procedure 1 to 4 first. Price prediction results in `.pt` or `pkl` files on the repository, polynomial fitting and gradient outcomes, and individual asset trading simulations in the corresponding scrip workspace should be prepared
+   beforehand.
+
+   Then, on each selected asset, at the end of the trading simulation script, such as `Citigroup_New_Hybrid Models_MoE Trading Strategy_Final_Verified.ipynb`, there is a helper function to generate the individual asset's trading simulations. Rename it when necessary.
+ 
+   <img src="https://github.com/user-attachments/assets/724c4c3a-9bc2-463b-acb9-f998a3ef5f89" width="550" alt="Asset Classes"/>
+
+   There should be three additional CSV files in the local repository of that subfolder (returns_xxx.csv, signals_xxx.csv and confidence_xxx.csv).
+   
+   <img src="https://github.com/user-attachments/assets/eac3f32b-e37e-48bd-8bb5-af0dcd07ac9a" width="550" alt="Asset Classes"/>
+
+   Repeat this process for all the other assets you want to trade together. Copy and paste the `returns_xxx.csv`, `signals_xxx.csv` and `confidence_xxx.csv` files to the parent folder (Under `Final_Final Deployment of Basket Trading_MoE Prediction with MoE Trading`).
+
+   <img src="https://github.com/user-attachments/assets/7bcb6e6d-06a3-4c81-8e27-f1b680a2a587" width="550" alt="Asset Classes"/>
+
+   Finally, run `Basket Trading_Report Writing_Final_Verified_All Plots.ipynb` code snippet. The basket trading simulations on each for each investmentary asset would be shown in the outputs.
+
+
+7. **Customise Your Asset (optional)**
 
    Adjust the `TRAIN_START`, `VAL_START`, and `TEST_START` and all the corresponding variables referred to dates for each notebook script.
+
+   Meanwhile, change the corresponding CSV files with adapted names. You can upload the new Excel worksheets from your PC to the repository if needed. 
 
    All downstream computations, including forecasts, polynomial fits/derivatives, and trading results, will update automatically.
 
@@ -118,7 +147,7 @@ Detailed metrics, figures, and P\&L curves live in the `results/` folder.
 │   └── <model>_<strategy>/
 │       ├── <asset>_Final.ipynb
 │       └── <asset>_Final_Verified.ipynb
-├── results/                 # Saved forecasts, back-tests, plots
+├── Report/                 # Saved forecasts, back-tests, plots
 ├── requirements.txt
 └── README.md                # you-are-here
 ```
