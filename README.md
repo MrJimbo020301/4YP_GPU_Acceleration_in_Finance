@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0b23985a-4132-4a10-8f25-d3b136ec1f37)# 4YP: Hybrid Ensembles for Time-Series Forecasting and Systematic Trading
+# 4YP: Hybrid Ensembles for Time-Series Forecasting and Systematic Trading
 
 *A Fourth-Year Project (4YP) in Engineering Science, University of Oxford, showcasing how individual investors can combine deep-learning ensembles with confidence-aware trading rules to enhance portfolio returns.*
 
