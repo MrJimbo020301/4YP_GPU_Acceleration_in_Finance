@@ -133,7 +133,7 @@ Full methodology and results are documented in **`4YP_Report_Yuzhe_Jin_Final.pdf
 * **20 % gain** in predictive accuracy from the Hybrid MoE relative to single-model baselines.
 * **≥ 70 % trend-matching accuracy** for Gradient Boosting, GRU, SVM, and N-BEATS across assets.
 * **Up to 25 % higher monthly returns** than naïve trading rules using confidence weighting.
-* **Positive returns in 65 % of scenarios**, beating UK risk-free rates by **6.67 % p.m.**
+* **Positive returns in 65 % of scenarios**, beating UK risk-free rates by **6.67 % per month**
 
 Detailed metrics, figures, and P\&L curves live in the `Report_Written_Materials`, `Report Diagrams_All` folder or summarised in Tabular Summaries_Final Report.xlsx worksheet.
 
