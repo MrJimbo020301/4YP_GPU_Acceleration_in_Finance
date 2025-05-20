@@ -56,10 +56,11 @@
    3. Afterwards, execute `Brent Oil_Hybrid Models_Naive Trading & Polynomial Fittings_Final_Verified.ipynb` for Naive Trading or `Brent Oil_New_Hybrid Models_MoE Trading Strategy_Final_Verified.ipynb` for Confidence-voting Trading.
       The results would be generated sequentially with each code block, with the trading log and plotted diagrams available for reference.
 
+5. **Executing Algorithm Basket Trading**
 
-   The very similar procedure works for all the other 7 cases except the final deployment of basket trading. In this case, we will firstly adopt the workflow applied to the ``Hybrid model price prediction +  Confidence Trading `` combination with all the selected asset
-   baskets. That is, follow the above procedure 1 to 4 first. Price prediction results in `.pt` or `pkl` files on the repository, polynomial fitting and gradient outcomes, and individual asset trading simulations in the corresponding scrip workspace should be prepared
-   beforehand.
+   The very similar procedure works for all the other 7 cases except the final deployment of basket trading. In this case, we will firstly adopt the workflow applied to the ``Hybrid model price prediction +  Confidence Trading `` combination with all the selected asset baskets.
+
+   That is, follow the above procedure 1 to 4 first. Price prediction results in `.pt` or `pkl` files on the repository, polynomial fitting and gradient outcomes, and individual asset trading simulations in the corresponding scrip workspace should be prepared beforehand.
 
    Then, on each selected asset, at the end of the trading simulation script, such as `Citigroup_New_Hybrid Models_MoE Trading Strategy_Final_Verified.ipynb`, there is a helper function to generate the individual asset's trading simulations. Rename it when necessary.
  
